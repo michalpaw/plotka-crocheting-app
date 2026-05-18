@@ -5,7 +5,7 @@
         <div class="auth-brand">
           <div class="auth-brand-mark">
             <svg viewBox="0 0 64 64" width="56" height="56">
-              <circle cx="32" cy="32" r="30" fill="#da62b0" />
+              <circle cx="32" cy="32" r="30" fill="#ad508c" />
               <path
                 d="M16 38c4-10 10-14 16-14s12 4 16 14"
                 fill="none"

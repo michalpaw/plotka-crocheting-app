@@ -7,7 +7,7 @@
 
 :root {
   /* --- Brand colours --- */
-  --cpd-color-primary: #da62b0;            /* Hot Pink */
+  --cpd-color-primary: #ad508c;            /* Hot Pink */
   --cpd-color-primary-hover: #c44f9c;
   --cpd-color-primary-tint: #e885c2;
   --cpd-color-secondary: #b28260;          /* Desert Sun */
@@ -51,7 +51,7 @@
   --cpd-shadow-lg: 0 14px 40px rgba(61, 32, 48, 0.14);
 
   /* --- Focus ring --- */
-  --cpd-focus-ring: 0 0 0 3px rgba(218, 98, 176, 0.28);
+  --cpd-focus-ring: 0 0 0 3px rgba(173, 80, 140, 0.28);
 
   /* --- Typography --- */
   --cpd-font-heading: 'Lora', Georgia, 'Times New Roman', serif;
@@ -59,7 +59,7 @@
 
   /* --- Ionic overrides --- */
   --ion-color-primary: var(--cpd-color-primary);
-  --ion-color-primary-rgb: 218, 98, 176;
+  --ion-color-primary-rgb: 173, 80, 140;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
   --ion-color-primary-shade: var(--cpd-color-primary-hover);

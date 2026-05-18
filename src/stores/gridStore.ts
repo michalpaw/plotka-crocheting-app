@@ -15,7 +15,7 @@ export type GridTool = 'paint' | 'erase' | 'eyedropper';
 
 export const useGridStore = defineStore('grid', () => {
   const project = ref<GridPatternProject | null>(null);
-  const activeColor = ref<string>('#da62b0');
+  const activeColor = ref<string>('#ad508c');
   const tool = ref<GridTool>('paint');
   const dirty = ref(false);
   const zoom = ref(1);

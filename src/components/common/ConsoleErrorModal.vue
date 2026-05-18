@@ -161,9 +161,9 @@ const errorsText = computed(() =>
 .cerr-btn:hover { background: var(--cpd-color-surface-soft, #fce8e8); }
 
 .cerr-btn--primary {
-  background: var(--cpd-color-primary, #da62b0);
+  background: var(--cpd-color-primary, #ad508c);
   color: #fff;
-  border-color: var(--cpd-color-primary, #da62b0);
+  border-color: var(--cpd-color-primary, #ad508c);
 }
 .cerr-btn--primary:hover { background: var(--cpd-color-primary-hover, #c44f9c); }
 </style>

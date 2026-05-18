@@ -27,7 +27,7 @@ export const DEFAULT_PALETTE = [
   '#22c55e',
   '#0ea5e9',
   '#3b82f6',
-  '#da62b0',
+  '#ad508c',
   '#d946ef',
   '#ec4899',
   '#a16207',

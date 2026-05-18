@@ -1,0 +1,7 @@
+{
+  "name": "crochet-pattern-designer",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}

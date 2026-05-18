@@ -1,0 +1,41 @@
+{
+  "name": "crochet-pattern-designer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local-first cross-platform crochet pattern designer (symbol editor, grid editor, instructions, 2D preview)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview --port 4173",
+    "typecheck": "vue-tsc --noEmit",
+    "lint": "echo \"(lint not configured)\"",
+    "cap:sync": "cap sync",
+    "cap:android": "cap open android",
+    "cap:ios": "cap open ios",
+    "electron:dev": "npm run build && electron electron/main.cjs",
+    "electron:start": "electron electron/main.cjs",
+    "electron:build": "npm run build && electron-builder"
+  },
+  "dependencies": {
+    "@ionic/vue": "^8.4.0",
+    "@ionic/vue-router": "^8.4.0",
+    "ionicons": "^7.4.0",
+    "pinia": "^2.2.6",
+    "vue": "^3.5.13",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/cli": "^6.2.0",
+    "@capacitor/core": "^6.2.0",
+    "@capacitor/ios": "^6.2.0",
+    "@types/node": "^20.17.10",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vue-tsc": "^2.1.10"
+  }
+}

@@ -34,13 +34,13 @@ export function formatAsHtml(instructions: GeneratedInstructions): string {
   return `<!DOCTYPE html>
 <html><head><meta charset="utf-8"><title>${esc(instructions.patternName)}</title>
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 780px; margin: 40px auto; padding: 24px; color: #2b2540; }
-  h1 { margin-bottom: 8px; }
-  h3 { margin-top: 24px; color: #7a4ec9; }
+  body { font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 780px; margin: 40px auto; padding: 24px; color: #3d2030; }
+  h1 { font-family: 'Lora', Georgia, serif; margin-bottom: 8px; color: #823e50; }
+  h3 { margin-top: 24px; color: #823e50; font-family: 'Lora', Georgia, serif; }
   ol { padding-left: 20px; }
   li { margin: 4px 0; }
-  small { color: #888; font-weight: normal; }
-  .summary { margin-top: 32px; padding: 12px 16px; background: #f5f0ff; border-radius: 8px; }
+  small { color: #8a5566; font-weight: normal; }
+  .summary { margin-top: 32px; padding: 12px 16px; background: #fadcdc; border-radius: 10px; color: #3d2030; }
 </style></head>
 <body>
   <h1>${esc(instructions.patternName)}</h1>

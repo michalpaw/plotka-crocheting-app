@@ -85,7 +85,7 @@ const errorsText = computed(() =>
 
 .cerr-dialog {
   background: var(--cpd-color-surface, #fff);
-  border: 1px solid var(--cpd-color-border, #ece6f5);
+  border: 1px solid var(--cpd-color-border, #ecd1d1);
   border-radius: var(--cpd-radius-lg, 18px);
   box-shadow: var(--cpd-shadow-md);
   display: flex;
@@ -100,8 +100,8 @@ const errorsText = computed(() =>
   align-items: center;
   justify-content: space-between;
   padding: 14px 18px;
-  border-bottom: 1px solid var(--cpd-color-border, #ece6f5);
-  background: var(--cpd-color-surface-soft, #f6f1ff);
+  border-bottom: 1px solid var(--cpd-color-border, #ecd1d1);
+  background: var(--cpd-color-surface-soft, #fce8e8);
 }
 
 .cerr-title {
@@ -116,12 +116,12 @@ const errorsText = computed(() =>
   font-size: 18px;
   line-height: 1;
   cursor: pointer;
-  color: var(--cpd-color-text-soft, #5b5375);
+  color: var(--cpd-color-text-soft, #8a5566);
   padding: 2px 6px;
   border-radius: var(--cpd-radius-sm, 6px);
   transition: background 0.12s;
 }
-.cerr-close:hover { background: var(--cpd-color-border, #ece6f5); }
+.cerr-close:hover { background: var(--cpd-color-border, #ecd1d1); }
 
 .cerr-body {
   flex: 1;
@@ -130,8 +130,8 @@ const errorsText = computed(() =>
   font-family: 'Consolas', 'Courier New', monospace;
   font-size: 12px;
   line-height: 1.6;
-  color: var(--cpd-color-text, #2b2540);
-  background: var(--cpd-color-bg, #fdfbff);
+  color: var(--cpd-color-text, #3d2030);
+  background: var(--cpd-color-bg, #fdf6f3);
   border: none;
   resize: none;
   overflow-y: auto;
@@ -144,26 +144,26 @@ const errorsText = computed(() =>
   justify-content: flex-end;
   gap: 8px;
   padding: 12px 18px;
-  border-top: 1px solid var(--cpd-color-border, #ece6f5);
+  border-top: 1px solid var(--cpd-color-border, #ecd1d1);
 }
 
 .cerr-btn {
   padding: 7px 18px;
   border-radius: var(--cpd-radius-md, 12px);
-  border: 1px solid var(--cpd-color-border, #ece6f5);
+  border: 1px solid var(--cpd-color-border, #ecd1d1);
   background: var(--cpd-color-surface, #fff);
-  color: var(--cpd-color-text, #2b2540);
+  color: var(--cpd-color-text, #3d2030);
   font-size: 13px;
   font-weight: 500;
   cursor: pointer;
   transition: background 0.12s;
 }
-.cerr-btn:hover { background: var(--cpd-color-surface-soft, #f6f1ff); }
+.cerr-btn:hover { background: var(--cpd-color-surface-soft, #fce8e8); }
 
 .cerr-btn--primary {
-  background: var(--cpd-color-primary, #7a4ec9);
+  background: var(--cpd-color-primary, #da62b0);
   color: #fff;
-  border-color: var(--cpd-color-primary, #7a4ec9);
+  border-color: var(--cpd-color-primary, #da62b0);
 }
-.cerr-btn--primary:hover { background: var(--cpd-color-primary-hover, #6a3eb5); }
+.cerr-btn--primary:hover { background: var(--cpd-color-primary-hover, #c44f9c); }
 </style>

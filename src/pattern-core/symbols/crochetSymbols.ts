@@ -8,7 +8,7 @@ export interface SymbolGlyph {
 }
 
 const VB = '0 0 32 32';
-const STROKE = '#2b2540';
+const STROKE = '#3d2030';
 
 export const SYMBOL_GLYPHS: Record<string, SymbolGlyph> = {
   chain: {
@@ -113,8 +113,8 @@ export const SYMBOL_GLYPHS: Record<string, SymbolGlyph> = {
   marker_join: {
     viewBox: VB,
     paths: [
-      { d: 'M16 6 m-8 0 a8 8 0 1 0 16 0 a8 8 0 1 0 -16 0', stroke: '#7a4ec9', fill: 'none', strokeWidth: 2 },
-      { d: 'M10 16 L22 16', stroke: '#7a4ec9', fill: 'none', strokeWidth: 2 }
+      { d: 'M16 6 m-8 0 a8 8 0 1 0 16 0 a8 8 0 1 0 -16 0', stroke: '#da62b0', fill: 'none', strokeWidth: 2 },
+      { d: 'M10 16 L22 16', stroke: '#da62b0', fill: 'none', strokeWidth: 2 }
     ]
   }
 };

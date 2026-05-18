@@ -9,7 +9,7 @@
       xmlns="http://www.w3.org/2000/svg"
       @click="onCanvasClick"
     >
-      <rect :width="pattern.canvas.width" :height="pattern.canvas.height" fill="#fdfbff" />
+      <rect :width="pattern.canvas.width" :height="pattern.canvas.height" fill="#fdf6f3" />
       <g v-if="editor.showGrid" v-html="gridLines" />
       <g v-for="item in pattern.canvas.items" :key="item.id" @click.stop="onItemClick(item.id, $event)">
         <rect
@@ -160,6 +160,6 @@ onBeforeUnmount(() => {
 svg {
   display: block;
   cursor: crosshair;
-  background: #fdfbff;
+  background: #fdf6f3;
 }
 </style>

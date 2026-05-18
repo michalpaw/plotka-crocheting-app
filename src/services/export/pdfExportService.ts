@@ -56,7 +56,7 @@ function renderGridHtml(grid: GridPattern, name: string): string {
   return `<!DOCTYPE html>
 <html><head><meta charset="utf-8"><title>${esc(name)}</title>
 <style>
-  body { font-family: sans-serif; margin: 24px; color: #2b2540; }
+  body { font-family: sans-serif; margin: 24px; color: #3d2030; }
   h1 { margin: 0 0 16px; }
   table { border-collapse: collapse; }
   td { width: 14px; height: 14px; border: 1px solid #ddd; }

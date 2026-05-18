@@ -40,7 +40,7 @@ export function renderPatternSvg(pattern: CrochetPattern, opts: PatternRenderOpt
     .join('');
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${canvas.width}" height="${canvas.height}" viewBox="0 0 ${canvas.width} ${canvas.height}">
-    <rect x="0" y="0" width="${canvas.width}" height="${canvas.height}" fill="#fdfbff" />
+    <rect x="0" y="0" width="${canvas.width}" height="${canvas.height}" fill="#fdf6f3" />
     ${grid}
     ${items}
   </svg>`;

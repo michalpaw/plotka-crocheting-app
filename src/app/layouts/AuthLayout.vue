@@ -5,7 +5,7 @@
         <div class="auth-brand">
           <div class="auth-brand-mark">
             <svg viewBox="0 0 64 64" width="56" height="56">
-              <circle cx="32" cy="32" r="30" fill="#7a4ec9" />
+              <circle cx="32" cy="32" r="30" fill="#da62b0" />
               <path
                 d="M16 38c4-10 10-14 16-14s12 4 16 14"
                 fill="none"
@@ -33,7 +33,7 @@ import { IonPage, IonContent } from '@ionic/vue';
 
 <style scoped>
 .auth-bg {
-  --background: linear-gradient(160deg, #f6f1ff 0%, #fdfbff 50%, #fbe8df 100%);
+  --background: linear-gradient(160deg, #fdf6f3 0%, #ffffff 50%, #fadcdc 100%);
 }
 .auth-shell {
   max-width: 980px;
@@ -53,27 +53,31 @@ import { IonPage, IonContent } from '@ionic/vue';
   }
 }
 .auth-brand h1 {
+  font-family: var(--cpd-font-heading);
   font-size: 2.4rem;
   margin: 16px 0 8px;
-  color: #2b2540;
+  color: var(--cpd-color-text);
+  letter-spacing: -0.01em;
 }
 .auth-brand p {
-  color: #5b5375;
+  color: var(--cpd-color-text-soft);
   font-size: 1.05rem;
   max-width: 460px;
+  line-height: 1.6;
 }
 .auth-brand-mark {
-  background: #fff;
+  background: var(--cpd-color-surface);
   display: inline-flex;
-  padding: 8px;
-  border-radius: 18px;
-  box-shadow: 0 6px 24px rgba(43, 37, 64, 0.08);
+  padding: 10px;
+  border-radius: var(--cpd-radius-lg);
+  box-shadow: var(--cpd-shadow-md);
+  border: 1px solid var(--cpd-color-border);
 }
 .auth-panel {
-  background: #fff;
-  padding: 28px;
-  border-radius: 18px;
-  box-shadow: 0 12px 40px rgba(43, 37, 64, 0.08);
-  border: 1px solid #ece6f5;
+  background: var(--cpd-color-surface);
+  padding: 32px;
+  border-radius: var(--cpd-radius-lg);
+  box-shadow: var(--cpd-shadow-lg);
+  border: 1px solid var(--cpd-color-border);
 }
 </style>

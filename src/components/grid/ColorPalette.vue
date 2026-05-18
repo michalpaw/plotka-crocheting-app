@@ -25,7 +25,7 @@ const emit = defineEmits<{
   (e: 'add', color: string): void;
 }>();
 
-const picker = ref('#7a4ec9');
+const picker = ref('#da62b0');
 
 function onAdd() {
   emit('add', picker.value);

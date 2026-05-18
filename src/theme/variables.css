@@ -1,55 +1,102 @@
 /*
  * Brand palette for the Crochet Pattern Designer.
- * Soft, creative, slightly handcrafted feel — yarn-purple primary, warm cream surfaces.
+ * Warm, pastel, handmade feel — hot-pink primary, burgundy accent,
+ * desert-sun secondary, rose-quartz soft surfaces.
  * Ionic variables are also overridden so the native UI matches the brand.
  */
 
 :root {
-  --cpd-color-primary: #7a4ec9;
-  --cpd-color-primary-hover: #6a3eb5;
-  --cpd-color-secondary: #ec8f6c;
-  --cpd-color-accent: #21915a;
-  --cpd-color-warning: #d97706;
-  --cpd-color-danger: #b13838;
+  /* --- Brand colours --- */
+  --cpd-color-primary: #da62b0;            /* Hot Pink */
+  --cpd-color-primary-hover: #c44f9c;
+  --cpd-color-primary-tint: #e885c2;
+  --cpd-color-secondary: #b28260;          /* Desert Sun */
+  --cpd-color-secondary-hover: #9a6e4e;
+  --cpd-color-accent: #823e50;             /* Burgundy */
+  --cpd-color-accent-soft: #fadcdc;        /* Rose Quartz */
+  --cpd-color-muted: #f7e3e3;
 
-  --cpd-color-bg: #fdfbff;
+  --cpd-color-warning: #b67318;
+  --cpd-color-danger: #a83545;
+
+  /* --- Surfaces & backgrounds --- */
+  --cpd-color-bg: #fdf6f3;
   --cpd-color-surface: #ffffff;
-  --cpd-color-surface-soft: #f6f1ff;
-  --cpd-color-border: #ece6f5;
-  --cpd-color-text: #2b2540;
-  --cpd-color-text-soft: #5b5375;
+  --cpd-color-surface-soft: #fce8e8;
+  --cpd-color-surface-rose: #fadcdc;       /* Rose Quartz — for highlights */
 
-  --cpd-radius-sm: 6px;
-  --cpd-radius-md: 12px;
-  --cpd-radius-lg: 18px;
+  /* --- Borders --- */
+  --cpd-color-border: #ecd1d1;
+  --cpd-color-border-soft: #f5e0e0;
 
-  --cpd-shadow-sm: 0 1px 2px rgba(43, 37, 64, 0.06);
-  --cpd-shadow-md: 0 6px 24px rgba(43, 37, 64, 0.08);
+  /* --- Text --- */
+  --cpd-color-text: #3d2030;               /* deep burgundy-brown */
+  --cpd-color-text-soft: #8a5566;
+  --cpd-color-text-muted: #a98290;
 
-  /* Ionic overrides */
+  /* --- Semantic soft tones --- */
+  --cpd-color-success-soft: #d6ead3;
+  --cpd-color-warning-soft: #f5e3b2;
+  --cpd-color-danger-soft: #f0cbcb;
+
+  /* --- Shape --- */
+  --cpd-radius-sm: 8px;
+  --cpd-radius-md: 14px;
+  --cpd-radius-lg: 22px;
+  --cpd-radius-xl: 30px;
+
+  /* --- Shadows (warm pink-tinted) --- */
+  --cpd-shadow-sm: 0 1px 3px rgba(61, 32, 48, 0.08);
+  --cpd-shadow-md: 0 6px 24px rgba(61, 32, 48, 0.10);
+  --cpd-shadow-lg: 0 14px 40px rgba(61, 32, 48, 0.14);
+
+  /* --- Focus ring --- */
+  --cpd-focus-ring: 0 0 0 3px rgba(218, 98, 176, 0.28);
+
+  /* --- Typography --- */
+  --cpd-font-heading: 'Lora', Georgia, 'Times New Roman', serif;
+  --cpd-font-body: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* --- Ionic overrides --- */
   --ion-color-primary: var(--cpd-color-primary);
-  --ion-color-primary-rgb: 122, 78, 201;
+  --ion-color-primary-rgb: 218, 98, 176;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
   --ion-color-primary-shade: var(--cpd-color-primary-hover);
-  --ion-color-primary-tint: #8e63d5;
+  --ion-color-primary-tint: var(--cpd-color-primary-tint);
+
+  --ion-color-secondary: var(--cpd-color-secondary);
+  --ion-color-secondary-rgb: 178, 130, 96;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: var(--cpd-color-secondary-hover);
+  --ion-color-secondary-tint: #c19577;
 
   --ion-background-color: var(--cpd-color-bg);
   --ion-text-color: var(--cpd-color-text);
   --ion-toolbar-background: var(--cpd-color-surface);
   --ion-card-background: var(--cpd-color-surface);
+  --ion-item-background: var(--cpd-color-surface);
+  --ion-border-color: var(--cpd-color-border);
 }
 
-.dark, :root.dark {
-  --cpd-color-bg: #15121f;
-  --cpd-color-surface: #1f1a2c;
-  --cpd-color-surface-soft: #29223d;
-  --cpd-color-border: #322a4a;
-  --cpd-color-text: #f0ecf8;
-  --cpd-color-text-soft: #b8b1cf;
+.dark,
+:root.dark {
+  --cpd-color-bg: #1f1418;
+  --cpd-color-surface: #2a1c20;
+  --cpd-color-surface-soft: #3a282d;
+  --cpd-color-surface-rose: #4a3338;
+  --cpd-color-border: #4a3338;
+  --cpd-color-border-soft: #5a3c43;
+  --cpd-color-text: #f5e8ea;
+  --cpd-color-text-soft: #d5b8be;
+  --cpd-color-text-muted: #a98290;
+  --cpd-color-muted: #3a282d;
 
   --ion-background-color: var(--cpd-color-bg);
   --ion-text-color: var(--cpd-color-text);
   --ion-toolbar-background: var(--cpd-color-surface);
   --ion-card-background: var(--cpd-color-surface);
+  --ion-item-background: var(--cpd-color-surface);
+  --ion-border-color: var(--cpd-color-border);
 }
